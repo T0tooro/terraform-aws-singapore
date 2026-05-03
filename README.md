@@ -29,20 +29,15 @@ Getting Started with AWS tutorial, adapted for the Singapore region.
 ---
 
 ## Architecture
-```
-terraform.tf          → Provider config (HashiCorp/AWS, Singapore region)
-variables.tf          → Input variables (instance name, instance type)
-main.tf               → EC2 instance inside custom VPC
-output.tf             → Outputs instance private DNS hostname
-```
-AWS ap-southeast-1 (Singapore)
-└── VPC: JunRong-vpc (10.0.0.0/16)
-├── Public Subnet:  10.0.101.0/24 (ap-southeast-1a)
-├── Private Subnet: 10.0.1.0/24  (ap-southeast-1b)
-├── Private Subnet: 10.0.2.0/24  (ap-southeast-1c)
-├── Internet Gateway
-├── Route Tables
-└── EC2: t3.micro Ubuntu 22.04 (Totoro-learn-terraform)
+
+**AWS ap-southeast-1 (Singapore)**
+- VPC: JunRong-vpc (10.0.0.0/16)
+  - Public Subnet: 10.0.101.0/24 (ap-southeast-1a)
+  - Private Subnet: 10.0.1.0/24 (ap-southeast-1b)
+  - Private Subnet: 10.0.2.0/24 (ap-southeast-1c)
+  - Internet Gateway
+  - Route Tables
+  - EC2: t3.micro Ubuntu 22.04 (Totoro-learn-terraform)
 ---
 
 ## Files
